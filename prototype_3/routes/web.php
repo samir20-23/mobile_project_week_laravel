@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth ;
 use App\Http\Controllers\AuthController ;
 use App\Http\Controllers\AdminController ;
+ 
+Route::get('/', [AuthController::class, 'showLoginForm'])->name('login');
+
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
