@@ -12,9 +12,9 @@
             <div class="col-md-6 text-right">
                 <form action="{{ route('logout') }}" method="POST" class="d-inline">
                     @csrf
-                    <button type="submit" class="btn btn-danger">Se déconnecter</button>
+                    <button type="submit" class="btn btn-danger">Logout</button>
                 </form>
-                <a href="/articles/create" class="btn btn-success ml-3">Créer un article</a>
+                <a href="/articles/create" class="btn btn-success ml-3">create articles</a>
             </div>
         </div>
 
