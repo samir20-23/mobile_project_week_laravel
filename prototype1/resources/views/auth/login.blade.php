@@ -1,19 +1,9 @@
-@extends("layouts.app");
-@section("content")
-
-
-@if ($errors->has('email'))
-    <div class="alert alert-danger">
-        {{ $errors->first('email') }}
-    </div>
-@endif
-
-<div>
-    <form action="" method="POST">
+@extends('layouts.app')
+@section('content')
+    <form action="" method="POST" class="bg-success">
         @csrf
         <input type="email" name="email">
         <input type="password" name="password">
-        <button type="submit" style="bg-success">LOG-IN</button>
+        <button type="submit">login</button>
     </form>
-</div>
 @endsection
